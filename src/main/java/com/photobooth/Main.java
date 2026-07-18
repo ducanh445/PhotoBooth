@@ -1,5 +1,7 @@
 package com.photobooth;
 
+import com.photobooth.camera.CameraService;
+import com.photobooth.camera.CameraTest;
 import com.photobooth.core.App;
 import com.photobooth.ui.SceneManager;
 import javafx.application.Application;
@@ -9,6 +11,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
+        CameraService.loadOpenCV();
+        CameraTest.test();
 
         stage.setTitle("Photo Booth");
 

@@ -9,6 +9,7 @@ repositories {
 
 dependencies {
     implementation 'com.mysql:mysql-connector-j:9.3.0'
+    implementation 'org.openpnp:opencv:4.9.0-0'
 }
 
 java {
