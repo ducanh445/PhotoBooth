@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.photobooth.controller.CameraController">
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="30">
+
+            <padding>
+
+                <Insets top="40"
+                        bottom="40"
+                        left="40"
+                        right="40"/>
+
+            </padding>
+
+            <Label text="📷 CAMERA SCREEN"
+                   style="-fx-font-size:30px;
+                          -fx-font-weight:bold;"/>
+
+            <Label text="Live Camera sẽ hiển thị tại đây."/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

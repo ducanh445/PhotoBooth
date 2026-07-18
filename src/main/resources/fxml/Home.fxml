@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.photobooth.controller.HomeController">
+
+    <fx:define>
+        <ToggleGroup fx:id="layoutGroup"/>
+        <ToggleGroup fx:id="colorGroup"/>
+    </fx:define>
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="20">
+
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <Label text="📸 PHOTO BOOTH"
+                   style="-fx-font-size:32px; -fx-font-weight:bold;"/>
+
+            <Label text="Capture Your Happy Moments"
+                   style="-fx-font-size:18px;"/>
+
+            <Button
+                    fx:id="startButton"
+                    text="START SESSION"
+                    prefWidth="250"
+                    prefHeight="60"
+                    onAction="#startSession"/>
+            <Separator/>
+
+            <Label text="Layout"/>
+
+            <RadioButton text="2 Photos" toggleGroup="$layoutGroup"/>
+            <RadioButton text="4 Photos" toggleGroup="$layoutGroup"/>
+            <RadioButton text="6 Photos" toggleGroup="$layoutGroup"/>
+
+            <Separator/>
+
+            <Label text="Color"/>
+
+            <RadioButton text="Color" toggleGroup="$colorGroup"/>
+            <RadioButton text="Black &amp; White" toggleGroup="$colorGroup"/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
