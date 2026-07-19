@@ -1,12 +1,26 @@
 package com.photobooth.service;
 
-import com.photobooth.model.PhotoSession;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SessionService {
 
-    private final PhotoSession session = new PhotoSession();
+    private final List<File> photos = new ArrayList<>();
 
-    public PhotoSession getSession() {
-        return session;
+    public void addPhoto(File file) {
+        photos.add(file);
+    }
+
+    public List<File> getPhotos() {
+        return photos;
+    }
+
+    public void clear() {
+        photos.clear();
+    }
+
+    public int getCount() {
+        return photos.size();
     }
 }

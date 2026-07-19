@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.photobooth.controller.FilterController">
+
+    <center>
+
+        <ImageView
+                fx:id="imageView"
+                fitWidth="400"
+                preserveRatio="true"/>
+
+    </center>
+
+    <bottom>
+
+        <HBox spacing="15"
+              alignment="CENTER">
+
+            <padding>
+                <Insets top="15" bottom="15"/>
+            </padding>
+
+            <Button text="Original"
+                    onAction="#original"/>
+
+            <Button text="Gray"
+                    onAction="#gray"/>
+
+            <Button text="Sepia"
+                    onAction="#sepia"/>
+
+            <Button text="Invert"
+                    onAction="#invert"/>
+
+            <Button text="Save"
+                    onAction="#save"/>
+
+            <Button text="Back"
+                    onAction="#back"/>
+
+        </HBox>
+
+    </bottom>
+
+</BorderPane>

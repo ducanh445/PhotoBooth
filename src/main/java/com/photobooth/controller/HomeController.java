@@ -6,12 +6,11 @@ import javafx.fxml.FXML;
 public class HomeController {
 
     @FXML
-    public void initialize() {
-        System.out.println("Home Loaded");
+    public void startSession() {
+
+        App.getSceneManager()
+                .switchScene("/fxml/Camera.fxml");
+
     }
 
-    @FXML
-    private void startSession() {
-        App.getSceneManager().switchScene("/fxml/Camera.fxml");
-    }
 }

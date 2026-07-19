@@ -1,12 +1,17 @@
 package com.photobooth.model;
 
+import java.io.File;
+
 public class PhotoSession {
 
-    private int photoCount = 4;
+    private int photoCount;
 
-    private boolean color = true;
+    private boolean blackWhite;
 
-    private int copies = 2;
+    public PhotoSession() {
+        photoCount = 2;
+        blackWhite = false;
+    }
 
     public int getPhotoCount() {
         return photoCount;
@@ -16,19 +21,29 @@ public class PhotoSession {
         this.photoCount = photoCount;
     }
 
-    public boolean isColor() {
-        return color;
+    public boolean isBlackWhite() {
+        return blackWhite;
     }
 
-    public void setColor(boolean color) {
-        this.color = color;
+    public void setBlackWhite(boolean blackWhite) {
+        this.blackWhite = blackWhite;
+    }
+    private File printFile;
+
+    public File getPrintFile() {
+        return printFile;
     }
 
-    public int getCopies() {
-        return copies;
+    public void setPrintFile(File printFile) {
+        this.printFile = printFile;
+    }
+    private File originalPrintFile;
+
+    public File getOriginalPrintFile() {
+        return originalPrintFile;
     }
 
-    public void setCopies(int copies) {
-        this.copies = copies;
+    public void setOriginalPrintFile(File originalPrintFile) {
+        this.originalPrintFile = originalPrintFile;
     }
 }

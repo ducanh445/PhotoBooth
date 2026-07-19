@@ -1,0 +1,17 @@
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.photobooth.controller.FinishController">
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="20">
+
+            <Label text="Cảm ơn bạn!"
+                   style="-fx-font-size:40"/>
+
+            <Label text="Hẹn gặp lại."/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

@@ -1,0 +1,18 @@
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.photobooth.controller.QRController">
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="20">
+
+            <Label text="Quét QR để tải ảnh"/>
+
+            <ImageView
+                    fx:id="qrImage"
+                    fitWidth="250"/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
